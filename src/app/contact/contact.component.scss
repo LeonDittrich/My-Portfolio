@@ -1,0 +1,95 @@
+.containerContact {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 613px;
+    height: 683px;
+    margin-top: 329px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+    h1 {
+        color: #2EFCD8;
+        line-height: 90px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .headline {
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 44px;
+        margin-top: 0;
+        margin-bottom: 51px;
+
+
+        a {
+            color: #2DFCD8;
+            text-decoration: none;
+        }
+    }
+
+    .headlineInput {
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    input {
+        background-color: black;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        color: #989898;
+        border: 0;
+        width: 612px;
+        height: 39px;
+
+
+        ::placeholder {
+            vertical-align: bottom;
+        }
+    }
+
+    textarea {
+        background-color: black;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        color: #989898;
+        border: 0;
+        width: 612px;
+        height: 179px;
+        resize: none;
+    }
+
+    .button {
+        display: flex;
+        justify-content: flex-end;
+        width: 612px;
+
+
+        button {
+            width: 157px;
+            height: 60px;
+            border: 2px solid #2EFCD8;
+            color: #2EFCD8;
+            background-color: black;
+            font-weight: 400, bold;
+            font-size: 18px;
+            line-height: 14px;
+            text-align: center;
+
+
+            &:hover {
+                background-color: #2EFCD8;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}

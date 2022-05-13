@@ -1,0 +1,34 @@
+.containerFooter {
+    background-color: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 83px;
+    padding-right: 67px;
+    margin-top: 106px;
+
+
+    a {
+        text-decoration: none;
+        color: #8491A0;
+    }
+    .img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 299px;
+        height: 45px;
+
+
+        img {
+            width: 34px;
+            height: 34px;
+
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

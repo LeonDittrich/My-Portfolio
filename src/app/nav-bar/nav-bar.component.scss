@@ -1,0 +1,44 @@
+.containerHeader {
+    display: flex;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+
+
+}
+
+.logo {
+    left: 7.36%;
+    //padding-left: 15px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    padding-right: 15px;
+    width: 317px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+
+        &:hover {
+            color: #fa2759;
+        }
+    }
+}
+
+
+
