@@ -19,14 +19,31 @@ export class MyWorkComponent implements OnInit {
 
   angular() {
     this.javaScriptHide = ! this.javaScriptHide
+
+    if (this.angularHide == false) {
+      this.angularHide = true;
+    }
   }
 
   java() {
-    this.angularHide = ! this.angularHide  }
+    this.angularHide = ! this.angularHide
+
+    if (this.javaScriptHide == false) {
+      this.javaScriptHide = true;
+    }  
+  }
 
   all() {
     this.angularHide = ! this.angularHide
     this.javaScriptHide = ! this.javaScriptHide
+
+    if (this.javaScriptHide == false) {
+      this.javaScriptHide = true;
+    }  
+
+    if (this.angularHide == false) {
+      this.angularHide = true;
+    }
   }
 
 }
