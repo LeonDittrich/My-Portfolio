@@ -1,9 +1,9 @@
 <div id="portfolio" class="containerMyWork">
     <div class="headline">
         <p>My work</p>
-        <button (click)="all()" id="all">All</button>
-        <button (click)="angular()" id="angular">Angular</button>
-        <button (click)="java()" id="java">Java Script</button>
+        <button (click)="all()" id="all" [ngClass]="{'green' : allBTN, 'red': !allBTN}">All</button>
+        <button (click)="angular()" id="angular" [ngClass]="{'green' : angularBTN, 'red': !angularBTN}">Angular</button>
+        <button (click)="java()" id="java" [ngClass]="{'green' : javaBTN, 'red': !javaBTN}">Java Script</button>
     </div>
 
     <div class="work">
