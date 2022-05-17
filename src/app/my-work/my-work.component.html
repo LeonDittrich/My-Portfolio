@@ -1,13 +1,13 @@
 <div id="portfolio" class="containerMyWork">
     <div class="headline">
         <p>My work</p>
-        <button id="all">All</button>
-        <button id="angular">Angular</button>
-        <button id="java">Java Script</button>
+        <button (click)="all()" id="all">All</button>
+        <button (click)="angular()" id="angular">Angular</button>
+        <button (click)="java()" id="java">Java Script</button>
     </div>
 
     <div class="work">
-        <div class="javaScript">
+        <div class="javaScript" *ngIf="javaScriptHide">
             <img src="assets/img/pkedex2.jpg">
 
             <div class="shadowBox">
@@ -18,7 +18,7 @@
             
         </div>
 
-        <div class="angular">
+        <div class="angular" *ngIf="angularHide">
             <img src="assets/img/pokedex.jpg">
 
              <div class="shadowBox">
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class="javaScript">
+        <div class="javaScript" *ngIf="javaScriptHide">
             <img src="assets/img/Scrum.jpg">
 
              <div class="shadowBox">
@@ -38,7 +38,7 @@
             </div>
         </div>
 
-        <div class="javaScript">
+        <div class="javaScript" *ngIf="javaScriptHide">
             <img src="assets/img/Opción 1.png">
 
              <div class="shadowBox">

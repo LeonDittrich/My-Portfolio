@@ -13,7 +13,20 @@ export class MyWorkComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  javaScriptHide: boolean = true;
+  angularHide: boolean = true;
 
-  
+
+  angular() {
+    this.javaScriptHide = ! this.javaScriptHide
+  }
+
+  java() {
+    this.angularHide = ! this.angularHide  }
+
+  all() {
+    this.angularHide = ! this.angularHide
+    this.javaScriptHide = ! this.javaScriptHide
+  }
 
 }
