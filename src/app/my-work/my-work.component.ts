@@ -15,7 +15,7 @@ export class MyWorkComponent implements OnInit {
 
   javaScriptHide: boolean = true;
   angularHide: boolean = true;
-  allBTN = true;
+  allBTN = false;
   angularBTN = true;
   javaBTN = true;
 
