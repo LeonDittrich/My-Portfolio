@@ -54,6 +54,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
 
         .main {
             width: 442px;
@@ -61,6 +62,7 @@
             margin: 0px 22.5px 45px 22.5px;
             background-color: #FA2759;
             display: flex;
+            box-shadow: 0 0 8px 8px black inset;
            
 
             .javaScript {
@@ -74,6 +76,7 @@
             img {
                 width: 442px;
                 height: 367px;
+                border-radius: 20px;
 
 
                 &:hover + .shadowBox {
@@ -81,7 +84,6 @@
                     cursor: pointer; 
                 }
             }
-
 
             .shadowBox {
                 display: flex;
@@ -155,6 +157,7 @@
                     &:hover {
                         background-color: #FA2759;
                         color: white;
+                        transition: all 0.2s ease;
                     }
                 }
             }
