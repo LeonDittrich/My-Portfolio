@@ -55,7 +55,7 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        div {
+        .main {
             width: 442px;
             height: 367px;
             margin: 0px 22.5px 45px 22.5px;
@@ -91,7 +91,6 @@
                 position: absolute;
                 background: rgba(245, 245, 245, 0.9);
                 margin-left: 0;
-                cursor: pointer;
                 visibility: hidden;
                 &:hover {
                     visibility: visible;
@@ -114,10 +113,35 @@
                     text-align: end;
                     color: black;
                     margin-top: 0;
-                    margin-bottom: 54px;
+                    margin-bottom: 34px;
                 }
 
-                a {
+                h3 {
+                    color: #FA2759;
+                    margin-top: 0;
+                }
+
+                .Link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 230px;
+
+                    .gitImg {
+                        width: 43px;
+                        height: 43px;
+                        background-color: rgba(0,0,0,0.2);
+                        border-radius: 360px;
+
+
+                        &:hover {
+                            background-color: rgba(0,0,0,0);
+                            cursor: pointer;
+                        }
+                    }
+                }    
+
+                .gameLink {
                     width: 128px;
                     height: 60px;
                     border: 1px solid #FA2759;

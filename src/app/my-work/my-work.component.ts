@@ -76,4 +76,8 @@ export class MyWorkComponent implements OnInit {
     }
   }
 
+  openLink(path:any) {
+    window.open(path);
+  }
+
 }
