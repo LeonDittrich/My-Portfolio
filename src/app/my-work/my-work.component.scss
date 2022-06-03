@@ -1,3 +1,6 @@
+$easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
+
+
 .containerMyWork {
     max-width: 1140px;
     margin-left: auto;
@@ -33,6 +36,8 @@
             color: white;
             font-weight: 500;
             line-height: 20px;
+            transition: all 0.5s ease;
+
 
             &:hover {
                 background-color: #FA2759;

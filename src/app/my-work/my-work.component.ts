@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 //import { defaultCipherList } from 'constants'; wirft fehlker wenn an ist
 
 @Component({
@@ -11,6 +12,7 @@ export class MyWorkComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
   javaScriptHide: boolean = true;
