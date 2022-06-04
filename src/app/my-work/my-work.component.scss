@@ -29,7 +29,8 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
         button {
             width: 128px;
             height: 70px;
-            border:  2px solid #FA2759;
+            //border:  2px solid #FA2759;
+            border:  2px solid #fe003e;
             box-sizing: border-box;
             margin: 3px 3px;
             background-color: black;
@@ -40,7 +41,8 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
 
 
             &:hover {
-                background-color: #FA2759;
+                //background-color: #FA2759;
+                background-color: #fe003e;
                 cursor: pointer;
             }
         }
@@ -50,7 +52,7 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
         }
 
         .red {
-            background-color: #FA2759;
+            background-color: #fe003e;
         }
     }
 
@@ -65,7 +67,7 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
             width: 442px;
             height: 367px;
             margin: 0px 22.5px 45px 22.5px;
-            background-color: #FA2759;
+            background-color: #fe003e;
             display: flex;
             box-shadow: 0 0 8px 8px black inset;
            
@@ -109,7 +111,7 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
                     font-size: 18px;
                     line-height: 20px;
                     text-align: center;
-                    color: #FA2759;
+                    color: #fe003e;
                     margin-bottom: 24px;
                 }
 
@@ -124,7 +126,7 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
                 }
 
                 h3 {
-                    color: #FA2759;
+                    color: #fe003e;
                     margin-top: 0;
                 }
 
@@ -151,8 +153,8 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
                 .gameLink {
                     width: 128px;
                     height: 60px;
-                    border: 1px solid #FA2759;
-                    color: #FA2759;
+                    border: 1px solid #fe003e;
+                    color: #fe003e;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -160,7 +162,7 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
 
 
                     &:hover {
-                        background-color: #FA2759;
+                        background-color: #fe003e;
                         color: white;
                         transition: all 0.2s ease;
                     }
