@@ -12,4 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  arrowToSkills() {
+    document.getElementById("skills").scrollIntoView({behavior:"smooth"});
+  }
 }
