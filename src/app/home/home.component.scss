@@ -3,8 +3,70 @@
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 51px;
+    //margin-top: 51px;
 
+
+    .spanColor1 {
+        color: #ff003e;
+    }
+
+    .spanColor2 {
+        color: #00dcff;
+    }
+
+    .greetingText p{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 90px;
+        font-style: normal;
+    }
+
+    .greetingText p::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+        transform: translateX(-101%);
+    }
+    
+    .greetingText p::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+        transform: translateX(0);
+    }
+    
+    .greetingText p:nth-of-type(1)::before,
+    .greetingText p:nth-of-type(1)::after{
+        animation-delay: 1s;
+    }
+    
+    .greetingText p:nth-of-type(2)::before,
+    .greetingText p:nth-of-type(2)::after{
+        animation-delay: 1.5s;
+    }
+    
+    @keyframes a-ltr-after{
+        0% {transform: translateX(-100%)}
+        100% {transform: translateX(101%)}
+    }
+    
+    @keyframes a-ltr-before{
+        0% {transform: translateX(0)}
+        100% {transform: translateX(200%)}
+    }
 
     .padding {
         display: flex;
@@ -13,31 +75,35 @@
         padding-right: 15px;
 
 
-        .greetingText {
-            width: 715px;
-            height: 278px;
+        // .greetingText {
+        //     width: 715px;
+        //     height: 278px;
 
 
-            p {
-                font-weight: 700;
-                font-size: 64px;
-                line-height: 90px;
-                font-style: normal;
-                margin: 0;
-            }
+        //     p {
+        //         font-weight: 700;
+        //         font-size: 64px;
+        //         line-height: 90px;
+        //         font-style: normal;
+        //         margin: 0;
+        //     }
 
-            .spanColor1 {
-                color: #ff003e;
-                //color: #0059ff;
-                //color: #c100ff;
-            }
+        //     .spanColor1 {
+        //         color: #ff003e;
+        //         //color: #0059ff;
+        //         //color: #c100ff;
+        //     }
                 
-            .spanColor2 {
-                color: #00dcff;
-                //color: #fa2759;
-            }
-        }
+        //     .spanColor2 {
+        //         color: #00dcff;
+        //         //color: #fa2759;
+        //     }
+        // }
 
+        .imgContainer {
+            display: flex;
+            align-items: end;
+        }
 
         img {
             border-radius: 400px;
@@ -162,6 +228,80 @@ $ani-delay: 1s;
     }
     70% {
         opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+
+
+.mainheading2 {
+    transform: rotateX(-90deg);
+    transition: transform 800ms ease-in-out 800ms;
+  
+    @media (max-width: 700px) {
+      font-size: 2.5rem;
+    }
+}
+
+.flip-text1 {
+    transform-origin: 50% 100% !important;
+    perspective-origin: center;
+    transform: perspective(1000px) rotateX(90deg) !important;
+}
+.flip-text2 {
+    transform-origin: 50% 0;
+    perspective-origin: center;
+    transform: perspective(1000px) rotateX(0);
+}
+
+.falling-letter-container {
+    transition: transform 800ms ease-in-out;
+    position: relative;
+    perspective: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+.greetingText {
+    height: 440px;
+}
+
+.subtitle {
+    display: flex;
+}
+
+#hide::before {
+    animation: showLetter 2s ease-out 3s;
+
+}
+#hide::after {
+    animation: hideLetter 2s ease-out 3s;
+}
+
+@keyframes showLetter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hideLetter {
+    0% { 
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.25;
     }
     100% { 
         opacity: 0;

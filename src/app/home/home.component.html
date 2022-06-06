@@ -1,13 +1,24 @@
 <div  class="containerHome">
     <div class="padding">
         <div class="greetingText">
-            <p>Hi,<br>
+            <!-- <p>Hi,<br>
                 I’m <span class="spanColor1">Leon</span> Dittrich<br>  
                 Front End Devolop<span class="spanColor2">e</span>r
-            </p>
+            </p> -->
+            <div class="falling-letter-container" [class.flip-text1]="flipText">
+                <p>Looking for a</p><br>
+            </div>
+            <div class="mainheading2" [class.flip-text2]="flipText">
+                <p>Hi,<br>
+                    I’m <span class="spanColor1">Leon</span> Dittrich</p>
+            </div>
+            <div class="subtitle">
+                <p>Front End Devolop<span class="spanColor2">e</span>r<p id="hide">?</p>
+            </div>
+            
         </div>
     
-        <div>
+        <div data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="3000" class="imgContainer">
             <img src="assets/img/DSC_0043.jpg">
         </div>
     </div>
