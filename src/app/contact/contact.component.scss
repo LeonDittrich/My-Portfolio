@@ -70,26 +70,58 @@
     .button {
         display: flex;
         justify-content: flex-end;
-        width: 612px;
-
-
-        button {
-            width: 157px;
-            height: 60px;
-            border: 2px solid #2EFCD8;
-            color: #2EFCD8;
-            background-color: black;
-            font-weight: 400, bold;
-            font-size: 18px;
-            line-height: 14px;
-            text-align: center;
-
-
-            &:hover {
-                background-color: #2EFCD8;
-                color: white;
-                cursor: pointer;
-            }
-        }
+        width: 616px;
     }
+
+    .custom-btn {
+        width: 157px;
+        height: 60px;
+        border: 2px solid #2EFCD8;
+        font-weight: 400, bold;
+        background-color: black;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        color: #2EFCD8;
+        font-size: 18px;
+        line-height: 14px;
+        margin-top: 24px;
+    }
+
+    .btn {
+        z-index: 2;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .btn:after {
+        position: absolute;
+        content: " ";
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                    -4px -4px 6px 0 rgb(46, 252, 218, .2), 
+          inset -4px -4px 6px 0 rgba(255,255,255,.5),
+          inset 4px 4px 6px 0 rgba(46, 252, 218, .2);
+        color: white;
+    }
+
+    .btn:hover:after {
+        -webkit-transform: scale(2) rotate(180deg);
+        transform: scale(2) rotate(180deg);
+        background: #2DFCD8;
+        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                    -4px -4px 6px 0 rgba(46, 252, 218, .2), 
+          inset -4px -4px 6px 0 rgba(255,255,255,.5),
+          inset 4px 4px 6px 0 rgba(46, 252, 218, .2);
+    }
+      
 }
