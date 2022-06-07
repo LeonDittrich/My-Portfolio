@@ -1,3 +1,16 @@
+body[data-aos-delay='custom'] [data-aos],
+[data-aos][data-aos][data-aos-delay='custom']{
+  transition-delay: 5s;
+  
+  &.aos-animate {
+      transition-delay: 5s;
+
+      @media (min-width: 1025px) {
+        transition-delay: 5s;
+      }
+  }
+}
+
 .containerHome {
     color: white;
     max-width: 1140px;
@@ -75,31 +88,6 @@
         padding-right: 15px;
 
 
-        // .greetingText {
-        //     width: 715px;
-        //     height: 278px;
-
-
-        //     p {
-        //         font-weight: 700;
-        //         font-size: 64px;
-        //         line-height: 90px;
-        //         font-style: normal;
-        //         margin: 0;
-        //     }
-
-        //     .spanColor1 {
-        //         color: #ff003e;
-        //         //color: #0059ff;
-        //         //color: #c100ff;
-        //     }
-                
-        //     .spanColor2 {
-        //         color: #00dcff;
-        //         //color: #fa2759;
-        //     }
-        // }
-
         .imgContainer {
             display: flex;
             align-items: end;
@@ -172,10 +160,10 @@
 
 .arrowContainer {
    display: flex;
-   height: 85px;
+   height: 90px;
    width: 78px;
    padding-left: 48%;
-   margin-top: 41%;
+   margin-top: 39%;
    cursor: pointer;
 }
 
@@ -235,7 +223,8 @@ $ani-delay: 1s;
 }
 
 
-.mainheading2 {
+/* Für das Flippen von dem Text */
+.mainheading {
     transform: rotateX(-90deg);
     transition: transform 800ms ease-in-out 800ms;
   
@@ -255,7 +244,7 @@ $ani-delay: 1s;
     transform: perspective(1000px) rotateX(0);
 }
 
-.falling-letter-container {
+.flip-container {
     transition: transform 800ms ease-in-out;
     position: relative;
     perspective: 10px;
@@ -273,26 +262,17 @@ p {
     display: flex;
 }
 
-#hide::before {
-    animation: showLetter 2s ease-out 3s;
 
-}
-#hide::after {
-    animation: hideLetter 2s ease-out 3s;
-}
+/* Zum verstecken von dem ? */
+.hide {
+    animation: fadeOut 3s ease-out 3s;
+    animation-fill-mode: forwards;
+};
 
-@keyframes showLetter {
+
+@keyframes fadeOut {
     0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes hideLetter {
-    0% { 
-        opacity: 1;
+      opacity: 1;
     }
     25% {
         opacity: 0.75;
@@ -303,7 +283,7 @@ p {
     75% {
         opacity: 0.25;
     }
-    100% { 
-        opacity: 0;
+    100% {
+      opacity: 0;
     }
-}
+}    

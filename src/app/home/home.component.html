@@ -1,21 +1,16 @@
 <div  class="containerHome">
     <div class="padding">
         <div class="greetingText">
-            <!-- <p>Hi,<br>
-                I’m <span class="spanColor1">Leon</span> Dittrich<br>  
-                Front End Devolop<span class="spanColor2">e</span>r
-            </p> -->
-            <div class="falling-letter-container" [class.flip-text1]="flipText">
+            <div class="flip-container" [class.flip-text1]="flipText">
                 <p>Looking for a</p><br>
             </div>
-            <div class="mainheading2" [class.flip-text2]="flipText">
+            <div class="mainheading" [class.flip-text2]="flipText">
                 <p>Hi,<br>
                     I’m <span class="spanColor1">Leon</span> Dittrich</p>
             </div>
             <div class="subtitle">
-                <p>Front End Devolop<span class="spanColor2">e</span>r<p id="hide">?</p>
+                <p>Front End Develop<span class="spanColor2">e</span>r<p class="hide">?</p>
             </div>
-            
         </div>
     
         <div data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="3000" class="imgContainer">
@@ -23,15 +18,15 @@
         </div>
     </div>
 
-    <div class="button">
+    <div data-aos="zoom-in-down" data-aos-delay="custom" data-aos-duration="2000" class="button">
         <a href="#contact">
             Contact me
         </a>
     </div>
 
     <div (click)="arrowToSkills()" class="arrowContainer">
-        <div class="arrow arrow-first"></div>
-        <div class="arrow arrow-second"></div>
+        <div *ngIf="arrowDown" class="arrow arrow-first"></div>
+        <div *ngIf="arrowDown" class="arrow arrow-second"></div>
     </div>
 </div>
 

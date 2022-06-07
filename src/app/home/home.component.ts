@@ -12,20 +12,25 @@ export class HomeComponent implements OnInit {
 
   flipText = false;
   flipText2 = false;
+  arrowDown = false;
   
 
   ngOnInit(): void {
     AOS.init();
+    delay: 'custom'
   }
 
   arrowToSkills() {
     document.getElementById("skills").scrollIntoView({behavior:"smooth"});
   }
-
+  
   ngAfterViewInit() {
     setTimeout(() => {
       this.flipText = true;
-    }, 3000);
-    //document.getElementById("hide").setAttribute("visibility", "hidden");
+    }, 4000);
+
+    setTimeout(() => {
+      this.arrowDown = true;
+    }, 7500);
   }
 }
