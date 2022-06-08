@@ -92,3 +92,19 @@
         }
     }
 }
+
+
+
+/* -----------------Optimierung für Mobile Endgeräte----------------- */
+
+
+@media (max-width: 1080px) {
+
+    .containerAbout {
+        max-width: 850px;
+    }
+
+    .border {
+        width: 850px !important;
+    }
+}

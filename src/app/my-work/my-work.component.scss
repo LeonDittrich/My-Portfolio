@@ -171,3 +171,26 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
         }
     }
 }
+
+
+
+/* -----------------Optimierung für Mobile Endgeräte----------------- */
+
+
+@media (max-width: 1080px) {
+
+    .containerMyWork {
+        max-width: 850px;
+    }
+
+    .main {
+        width: 302px !important;
+        height: 227px !important;
+
+
+        img {
+            width: 302px !important;
+            height: 227px !important;
+        }
+    }
+}

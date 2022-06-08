@@ -89,3 +89,15 @@ img {
 
 
 
+/* -----------------Optimierung für Mobile Endgeräte----------------- */
+
+
+@media (max-width: 1080px) {
+
+  .containerHeader {
+    max-width: 850px;
+  }
+}
+
+
+

@@ -85,3 +85,15 @@
         }
     }   
 }
+
+
+
+/* -----------------Optimierung für Mobile Endgeräte----------------- */
+
+
+@media (max-width: 1080px) {
+
+    .containerSkills {
+        max-width: 850px;
+    }
+}
