@@ -293,35 +293,66 @@ p {
 /* -----------------Optimierung für Mobile Endgeräte----------------- */
 
 
-@media (max-width: 1080px) {
-
+@media (max-width: 430px) {
     .containerHome {
-        max-width: 850px;
+        max-width: 400px;
     }
 
-    .imgContainer {
+    .padding {
+        flex-direction: column-reverse;
+        align-items: center;
         margin-top: 58px;
     }
 
     .greetingText {
-        height: 365px;
-        width: 470px;
         margin-bottom: 32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: 200px;
     }
 
     .greetingText p {
-        font-size: 42px !important;
-        line-height: 55px !important;
+        font-size: 32px !important;
+        line-height: 45px !important;
     }
 
     .button {
-        margin-left: 32%;
+        margin-left: 47px !important;
     }
 
     .arrowContainer {
-        margin-top: 8vh;
+        display: none;
     }
 }
+
+
+// @media (max-width: 1080px) {
+
+//     .containerHome {
+//         max-width: 850px;
+//     }
+
+//     .imgContainer {
+//         margin-top: 58px;
+//     }
+
+//     .greetingText {
+//         height: 365px;
+//         width: 470px;
+//         margin-bottom: 32px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+
+//     .greetingText p {
+//         font-size: 42px !important;
+//         line-height: 55px !important;
+//     }
+
+//     .button {
+//         margin-left: 32%;
+//     }
+
+//     .arrowContainer {
+//         margin-top: 8vh;
+//     }
+// }

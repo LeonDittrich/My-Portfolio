@@ -92,12 +92,27 @@ img {
 /* -----------------Optimierung für Mobile Endgeräte----------------- */
 
 
-@media (max-width: 1080px) {
-
+@media (max-width: 430px) {
   .containerHeader {
-    max-width: 850px;
+    max-width: 400px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 16px;
   }
 }
+
+
+// @media (max-width: 1080px) {
+
+//   .containerHeader {
+//     max-width: 850px;
+//   }
+// }
 
 
 

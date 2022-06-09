@@ -107,4 +107,43 @@
     .border {
         width: 850px !important;
     }
+
+    .aboutImg {
+        width: 309px !important;
+    }
+
+    .aboutText {
+        width: 411px !important;
+    }
+
+    .aboutStory {
+        flex-wrap: wrap;
+        width: 500px;
+        margin-left: 21%;
+
+
+        p {
+            line-height: 28px;
+        }
+    }
+
+    .storyDiv {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 850px) {
+    
+    .containerAbout {
+        max-width: 750px;
+    }
+
+    .border {
+        width: 750px !important;
+        margin-left: 4%;
+    }
+
+    .aboutImg {
+        width: 270px !important;
+    }
 }
