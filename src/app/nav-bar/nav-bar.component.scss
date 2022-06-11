@@ -1,34 +1,34 @@
+.containerHeader {
+  display: flex;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  min-height: 100px;
+  align-items: center;
+}
+
 header {
-    height: 100px;
+  height: 100px;
 }
 
 .sticky {
-    position: fixed;
-    width: 100%;
-    height: 75px;
-    top: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 3;
-}
-
-.containerHeader {
-    display: flex;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-    min-height: 100px;
-    align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3;
 }
 
 .logo {
-    left: 7.36%;
-    cursor: pointer;
+  left: 7.36%;
+  cursor: pointer;
 }
 
 img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .navbar {
@@ -43,15 +43,15 @@ img {
     $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
     
     .underline {
-        font-size: 16px;
-        color: white;
-        position: relative;
-        text-decoration: none;
-        padding-bottom: 8px;
-      
-        &:before,
-        &:after {
-          content: '';
+      font-size: 16px;
+      color: white;
+      position: relative;
+      text-decoration: none;
+      padding-bottom: 8px;
+    
+      &:before,
+      &:after {
+        content: '';
           position: absolute;
           bottom: 2px;
           left: 0; right: 0;

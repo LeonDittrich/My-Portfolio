@@ -95,52 +95,65 @@
 
     .containerSkills {
         max-width: 400px;
-    }
-
-    .headline {
-        margin-bottom: 0 !important;
-
-        p {
-            line-height: 40px;
-        }
-    }
-
-    .skills {
-        width: 400px !important;
-        justify-content: center;
-    }
-
-    .skillContainer {
-        width: 108px !important;
-        height: 71px !important;
-        border-radius: 6px !important;
-        margin-left: 5px !important;
-        margin-right: 5px !important;
-        margin-bottom: 40px !important;
-        margin-top: 0px !important;
-    }
-
-    .skillImg {
-        width: 35px !important;
-        height: 35px !important;
+        margin-top: 61px;
 
 
-        img {
-            width: 18px !important;
-            height: 18px !important;
-        }
-    }
-
-    .skillCard {
-        height: 70.5px !important;
-        text-align: center;
-
-
-        p {
-            font-size: 16px !important;
-        }
-    }
+        .headline {
+            margin: 45px;
     
+            p {
+                line-height: 40px;
+                margin: 0;
+            }
+        }
+    
+        .skills {
+            width: 400px;
+            justify-content: center;
+
+
+            .skillContainer {
+                width: 108px;
+                height: 71px;
+                border-radius: 6px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 40px;
+                margin-top: 0px;
+            }
+
+            .skillImgContainer {
+
+                .skillImg {
+                    width: 35px;
+                    height: 35px;
+            
+            
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    #testAutomation {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+
+            .skillCard {
+                height: 70.5px;
+                text-align: center;
+        
+        
+                p {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }   
 }
 
 

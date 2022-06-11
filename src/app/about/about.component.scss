@@ -98,37 +98,87 @@
 /* -----------------Optimierung für Mobile Endgeräte----------------- */
 
 
+@media (max-width: 430px) {
+    .containerAbout {
+        max-width: 400px;
+
+
+        .aboutShort {
+            flex-direction: column;
+            align-items: center;
+            height: 420px;
+
+
+            .aboutImg {
+                width: 333px;
+                justify-content: center;
+            }
+
+            .aboutText {
+                margin-top: 16px;
+                padding-left: 0;
+                width: 333px;
+                height: auto;
+    
+    
+                h2 {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .border {
+            display: none;
+        }
+
+        .aboutStory {
+            flex-direction: column;
+            width: 245px !important;
+            margin-left: 0px;
+            margin-top: 24px;
+
+
+            div {
+                p {
+                    font-size: 18px;
+                }
+
+                .story {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .storyDiv {
+            width: 232px;
+        }
+    }
+}        
+
+
 @media (max-width: 1080px) {
 
     .containerAbout {
         max-width: 850px;
-    }
 
-    .border {
-        width: 850px !important;
-    }
-
-    .aboutImg {
-        width: 309px !important;
-    }
-
-    .aboutText {
-        width: 411px !important;
-    }
-
-    .aboutStory {
-        flex-wrap: wrap;
-        width: 500px;
-        margin-left: 21%;
-
-
-        p {
-            line-height: 28px;
+        .border {
+            width: 850px;
         }
-    }
-
-    .storyDiv {
-        margin-bottom: 24px;
+    
+        .aboutStory {
+            flex-wrap: wrap;
+            width: 500px;
+            margin-left: 21%;
+    
+    
+            p {
+                line-height: 28px;
+            }
+        }
+    
+        .storyDiv {
+            margin-bottom: 24px;
+        }
     }
 }
 
@@ -136,14 +186,17 @@
     
     .containerAbout {
         max-width: 750px;
+
+
+        .border {
+            width: 750px;
+            margin-left: 4%;
+        }
+    
+        .aboutImg {
+            width: 270px;
+        }
     }
 
-    .border {
-        width: 750px !important;
-        margin-left: 4%;
-    }
-
-    .aboutImg {
-        width: 270px !important;
-    }
+   
 }

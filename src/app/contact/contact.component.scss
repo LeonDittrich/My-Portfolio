@@ -131,6 +131,39 @@
 /* -----------------Optimierung für Mobile Endgeräte----------------- */
 
 
+@media (max-width: 430px) {
+    .containerContact {
+        max-width: 400px !important;
+        margin-top: 77px;
+        margin-left: 16px;
+
+
+        h1 {
+            line-height: 30px;
+        }
+
+        .headline {
+            width: 343px;
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 5px;
+        }
+
+        input {
+            width: 343px;
+        }
+    
+        textarea {
+            width: 343px;
+        }
+    
+        .button {
+            width: 330px;
+        }
+    }
+}        
+
+
 @media (max-width: 1080px) {
 
     .containerContact {
