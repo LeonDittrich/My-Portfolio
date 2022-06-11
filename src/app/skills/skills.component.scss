@@ -108,39 +108,39 @@
     .skills {
         width: 400px !important;
         justify-content: center;
+    }
+
+    .skillContainer {
+        width: 108px !important;
+        height: 71px !important;
+        border-radius: 6px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        margin-bottom: 40px !important;
+        margin-top: 0px !important;
+    }
+
+    .skillImg {
+        width: 35px !important;
+        height: 35px !important;
 
 
-        .skillContainer {
-            width: 108px !important;
-            height: 71px !important;
-            border-radius: 6px !important;
-            margin-left: 5px !important;
-            margin-right: 5px !important;
-            margin-bottom: 40px !important;
-            margin-top: 0px !important;
-        }
-
-        .skillImg {
-            width: 35px !important;
-            height: 35px !important;
-
-
-            img {
-                width: 18px !important;
-                height: 18px !important;
-            }
-        }
-
-        .skillCard {
-            height: 70.5px !important;
-            text-align: center;
-
-
-            p {
-                font-size: 16px !important;
-            }
+        img {
+            width: 18px !important;
+            height: 18px !important;
         }
     }
+
+    .skillCard {
+        height: 70.5px !important;
+        text-align: center;
+
+
+        p {
+            font-size: 16px !important;
+        }
+    }
+    
 }
 
 
