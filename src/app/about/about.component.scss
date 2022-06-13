@@ -15,8 +15,8 @@
             width: 389px;
             height: 253px;
             display: flex;
-            align-items: end;
-            justify-content: end;
+            align-items: flex-end;
+            justify-content: flex-end;
 
             img {
                 width: 209px;
@@ -56,38 +56,42 @@
     }
 
 
-    .aboutStory {
-        display: flex;
-        justify-content: space-between;
+    .aboutStoryContainer {
 
-        div {
+        
+        .aboutStory {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-
-
-            .greenCircle {
-                width: 79px;
-                height: 79px;
-                border-radius: 200px;
-                background-color: #2DFCD8;
+            justify-content: space-between;
+    
+            div {
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
                 align-items: center;
-                margin-bottom: 22px;
     
     
-                img {
-                    width: 31px;
-                    height: 31px;
+                .greenCircle {
+                    width: 79px;
+                    height: 79px;
+                    border-radius: 200px;
+                    background-color: #2DFCD8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 22px;
+        
+        
+                    img {
+                        width: 31px;
+                        height: 31px;
+                    }
                 }
-            }
-
-
-            p {
-                width: 232px;
-                text-align: center;
-                margin: 0px 0px 12px;
+    
+    
+                p {
+                    width: 232px;
+                    text-align: center;
+                    margin: 0px 0px 12px;
+                }
             }
         }
     }
@@ -98,7 +102,7 @@
 /* -----------------Optimierung für Mobile Endgeräte----------------- */
 
 
-@media (max-width: 430px) {
+@media (max-width: 460px) {
     .containerAbout {
         max-width: 400px;
 
@@ -131,20 +135,26 @@
             display: none;
         }
 
-        .aboutStory {
-            flex-direction: column;
-            width: 245px !important;
-            margin-left: 0px;
-            margin-top: 24px;
+        .aboutStoryContainer {
+            display: flex;
+            justify-content: center;
+        
 
-
-            div {
-                p {
-                    font-size: 18px;
-                }
-
-                .story {
-                    font-size: 16px;
+            .aboutStory {
+                flex-direction: column;
+                width: 245px !important;
+                margin-left: 0px;
+                margin-top: 24px;
+    
+    
+                div {
+                    p {
+                        font-size: 18px;
+                    }
+    
+                    .story {
+                        font-size: 16px;
+                    }
                 }
             }
         }
@@ -162,17 +172,25 @@
         max-width: 850px;
 
         .border {
-            width: 850px;
+            width: auto;
+            margin-left: 50px;
+            margin-right: 50px;
         }
     
-        .aboutStory {
-            flex-wrap: wrap;
-            width: 500px;
-            margin-left: 21%;
-    
-    
-            p {
-                line-height: 28px;
+        .aboutStoryContainer {
+            display: flex;
+            justify-content: center;
+
+
+            .aboutStory {
+                flex-wrap: wrap;
+                width: 500px;
+                //margin-left: 21%;
+        
+        
+                p {
+                    line-height: 28px;
+                }
             }
         }
     
@@ -189,8 +207,9 @@
 
 
         .border {
-            width: 750px;
-            margin-left: 4%;
+            width: auto;
+            margin-left: 50px;
+            margin-right: 50px;
         }
     
         .aboutImg {

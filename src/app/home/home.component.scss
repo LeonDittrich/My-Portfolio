@@ -90,7 +90,7 @@ body[data-aos-delay='custom'] [data-aos],
 
         .imgContainer {
             display: flex;
-            align-items: end;
+            align-items: flex-end;
         }
 
         img {
@@ -163,7 +163,7 @@ body[data-aos-delay='custom'] [data-aos],
    height: 90px;
    width: 78px;
    margin-left: 48%;
-   margin-top: 39%;
+   margin-top: 37vh;
    cursor: pointer;
 }
 
@@ -293,7 +293,7 @@ p {
 /* -----------------Optimierung für Mobile Endgeräte----------------- */
 
 
-@media (max-width: 430px) {
+@media (max-width: 460px) {
     .containerHome {
         max-width: 400px;
 
@@ -356,12 +356,9 @@ p {
             line-height: 55px;
         }
     
-        .button {
-            margin-left: 32%;
-        }
-    
         .arrowContainer {
-            margin-top: 8vh;
+            margin-top: 28vh;
         }
     }
 }
+
