@@ -131,7 +131,7 @@
 /* -----------------Optimierung für Mobile Endgeräte----------------- */
 
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
     .containerContact {
         max-width: 400px;
         margin-top: 77px;
@@ -159,22 +159,23 @@
     
         .button {
             width: 330px;
+            overflow-x: hidden;
         }
     }
 }        
 
 
-@media (min-width: 600px) {
+// @media (min-width: 600px) {
 
-    .containerContact {
-        max-width: 850px;
+//     .containerContact {
+//         max-width: 850px;
 
 
-        .button {
-            margin-left: auto;
-        }
-    }
-}
+//         .button {
+//             margin-left: auto;
+//         }
+//     }
+// }
 
 
 @media (max-width: 1080px) {

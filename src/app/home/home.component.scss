@@ -293,12 +293,15 @@ p {
 /* -----------------Optimierung für Mobile Endgeräte----------------- */
 
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
     .containerHome {
         max-width: 400px;
 
 
         .imgContainer {
+            overflow-x: hidden;
+
+
             img {
                 width: 200px;
                 height: 200px;
@@ -323,6 +326,7 @@ p {
     
         .button {
             margin-left: 45px;
+            overflow-x: hidden;
         }
     
         .arrowContainer {
@@ -332,7 +336,30 @@ p {
 }
 
 
-@media (max-width: 1080px) {
+@media (max-width: 1079px) and (min-width: 701px) {
+    
+    .containerHome {
+        max-width: 750px;
+        /* Anordnug nwie bei Hndy nur größer!! */
+
+        .imgContainer {
+
+            img {
+                width: 335px;
+                height: 335px;
+            }
+        }
+
+        .greetingText {
+            p {
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1080px) {
 
     .containerHome {
         max-width: 850px;
