@@ -177,6 +177,20 @@
 //     }
 // }
 
+@media (max-width: 1079px) and (min-width: 701px) {
+  
+
+    .containerContact {
+        max-width: 750px;
+
+
+        .button {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    }
+}
+
 
 @media (max-width: 1080px) {
 

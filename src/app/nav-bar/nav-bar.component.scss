@@ -106,6 +106,22 @@ img {
   }
 }
 
+@media (max-width: 1079px) and (min-width: 701px) {
+  
+
+  .containerHeader {
+    max-width: 750px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 7.36%;
+  }
+}
+
 
 @media only screen and (max-width: 1080px) {
 

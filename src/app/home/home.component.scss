@@ -337,10 +337,11 @@ p {
 
 
 @media (max-width: 1079px) and (min-width: 701px) {
-    
+  
+
     .containerHome {
         max-width: 750px;
-        /* Anordnug nwie bei Hndy nur größer!! */
+
 
         .imgContainer {
 
@@ -350,10 +351,28 @@ p {
             }
         }
 
+        .padding {
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-top: 50px;
+        }
+
         .greetingText {
+            height: 400px;
+
+
             p {
                 font-size: 48px;
             }
+        }
+
+        .button {
+            margin-left: 29%;
+            overflow-x: hidden;
+        }
+
+        .arrowContainer {
+            display: none;
         }
     }
 }
