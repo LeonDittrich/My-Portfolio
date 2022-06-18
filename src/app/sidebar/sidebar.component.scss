@@ -10,9 +10,19 @@ mat-sidenav, mat-sidenav-content {
 } 
 
 mat-sidenav {
-  background-color: rgba(0, 0, 0, 0.8);;
+  background-color: rgba(0, 0, 0, 0.9);;
   width: 200px;
-  height: 300px;
+  height: 100vh;
+}
+
+.mat-drawer-container {
+  overflow: visible;
+}
+
+.mat-drawer:not(.mat-drawer-side) {
+  box-shadow:  0px 8px 10px -5px rgba(0, 0, 0, 0.2),  
+    0px 16px 24px 2px rgba(245, 244, 244, 0.54),
+    0px 6px 30px 5px rgba(0, 0, 0, 0.12);
 }
 
 header {
@@ -104,9 +114,9 @@ img {
   }
 }
 
-.navbar2 {
+.navbarMobile {
   padding-right: 15px;
-  width: 317px;
+  width: 240px;
   display: flex;
   justify-content: space-between;
   
@@ -116,11 +126,12 @@ img {
   $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
   
   .underline {
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     position: relative;
     text-decoration: none;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
   
     &:before,
     &:after {
@@ -163,11 +174,15 @@ img {
 .menu {
   display: none;
   cursor: pointer;
+  margin-right:  18px;
 }
 
 h1 {
   color: white;
   text-align: center;
+  font-size: 32px;
+  margin-top: 69px;
+  margin-bottom: 69px;
 }
 
 .menuList {
