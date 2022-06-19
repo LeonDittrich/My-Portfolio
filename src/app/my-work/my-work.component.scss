@@ -180,6 +180,8 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
 @media (max-width: 700px) {
     .containerMyWork {
         max-width: 400px;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
 
         .headline {

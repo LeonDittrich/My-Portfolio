@@ -40,7 +40,7 @@
     }
 
     input {
-        background-color: black;
+        background-color: #1A1A1A;
         font-weight: 500;
         font-size: 18px;
         line-height: 20px;
@@ -56,7 +56,7 @@
     }
 
     textarea {
-        background-color: black;
+        background-color: #1A1A1A;
         font-weight: 500;
         font-size: 18px;
         line-height: 20px;
@@ -136,6 +136,8 @@
         max-width: 400px;
         margin-top: 77px;
         margin-left: 16px;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
 
         h1 {
@@ -182,9 +184,12 @@
 
     .containerContact {
         max-width: 750px;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
 
         .button {
+            width: 613px;
             overflow-x: hidden;
             overflow-y: hidden;
         }
