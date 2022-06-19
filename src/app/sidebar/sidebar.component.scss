@@ -10,7 +10,7 @@ mat-sidenav, mat-sidenav-content {
 } 
 
 mat-sidenav {
-  background-color: rgba(0, 0, 0, 0.9);;
+  background-color: rgba(0, 0, 0, 0); // orginal rgba(0, 0, 0, 0.9)
   width: 200px;
   height: 100vh;
 }
@@ -116,9 +116,11 @@ img {
 
 .navbarMobile {
   padding-right: 15px;
-  width: 240px;
+  //width: 240px;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
+  justify-content: flex-end;
   
 
   $duration: .2s;

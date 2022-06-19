@@ -5,6 +5,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule } from '@angular/forms';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -26,6 +27,7 @@ import { MatListModule } from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
+    SidebarComponent,
     NavBarComponent,
     HomeComponent,
     SkillsComponent,
@@ -33,8 +35,7 @@ import { MatListModule } from '@angular/material/list';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    ImprintComponent,
-    SidebarComponent
+    ImprintComponent
   ],
   imports: [
     BrowserModule,

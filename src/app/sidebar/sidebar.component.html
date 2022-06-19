@@ -1,12 +1,12 @@
 <header id="home">
-  <mat-sidenav-container class="sticky">
-    <mat-sidenav class="navbarMobile" mode="over" [(opened)]="opened" position="end">
-      <h1>Menu</h1>
-      <div class="menuList">
-        <a class="underline" routerLink="/" href="#home">HOME</a>
-        <a class="underline" href="#aboutMe">ABOUT</a>
-        <a class="underline" href="#portfolio">PORTFOLIO</a>
-      </div>
+  <mat-sidenav-container class="sticky" (backdropClick)="close()">
+    <mat-sidenav (click)="close()" #sidenav class="navbarMobile" mode="over" [(opened)]="opened" position="end">
+        <h1>Menu</h1>
+        <div class="menuList">
+          <a (click)="close()" class="underline" href="#home">HOME</a>
+          <a (click)="close()" class="underline" href="#aboutMe">ABOUT</a>
+          <a (click)="close()" class="underline" href="#portfolio">PORTFOLIO</a>
+        </div>
     </mat-sidenav>
     <mat-sidenav-content class="containerHeader">
       <div class="logo">
@@ -20,7 +20,6 @@
     <div class="menu">
       <img (click)="opened=!opened" src="assets/img/menu.png">
     </div>
-      <!-- <button (click)="opened=!opened">Toggle opened</button> -->
     </mat-sidenav-content>
   </mat-sidenav-container>
 </header>
