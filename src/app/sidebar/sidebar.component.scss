@@ -220,7 +220,7 @@ h1 {
   
 
   .containerHeader {
-    max-width: 750px;
+    max-width: 700px;
   }
 
   .navbar {
@@ -230,10 +230,14 @@ h1 {
   .logo {
     margin-left: 7.36%;
   }
+
+  .menu {
+    display: unset;
+  }
 }
 
 
-@media only screen and (max-width: 1080px) {
+@media (min-width: 1080px) {
 
   .containerHeader {
     max-width: 850px;
