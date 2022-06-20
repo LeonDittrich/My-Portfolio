@@ -246,6 +246,44 @@ $easeInOut      : cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 
 
+@media (max-width: 1079px) and (min-width: 701px) {
+  
+
+    .containerMyWork {
+      max-width: 700px;
+
+
+      .work {
+
+        .main {
+
+            .shadowBox {
+
+                .headlineWorkBox {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
+
+                .gameLink {
+                    width: 92px;
+                    height: 43px;
+                }
+            }
+        }
+      }
+    }
+}
+  
+
 
 @media (max-width: 1080px) {
 

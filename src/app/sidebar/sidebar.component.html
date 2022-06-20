@@ -1,6 +1,6 @@
 <header id="home">
   <mat-sidenav-container class="sticky" (backdropClick)="close()">
-    <mat-sidenav (click)="close()" #sidenav class="navbarMobile" mode="over" [(opened)]="opened" position="end">
+    <mat-sidenav (click)="close()" #sidenav class="navbarMobile" mode="over" [(opened)]="opened" position="end" [autoFocus]="false">
         <h1>Menu</h1>
         <div class="menuList">
           <a (click)="close()" class="underline" href="#home">HOME</a>
