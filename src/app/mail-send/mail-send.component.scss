@@ -1,0 +1,45 @@
+.containerMail {
+    color: white;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 58px;
+
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+
+
+/* -----------------Optimierung für Mobile Endgeräte----------------- */
+
+
+@media (max-width: 700px) {
+    .containerMail {
+        max-width: 340px;
+    }
+}
+
+
+@media (max-width: 1079px) and (min-width: 701px) {
+  
+
+    .containerMail {
+        max-width: 550px;
+    }
+}
+
+
+@media (min-width: 1080px) {
+
+    .containerMail {
+        max-width: 800px;
+    }
+}

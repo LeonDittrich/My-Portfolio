@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -8,10 +9,16 @@ import * as AOS from 'aos';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
     AOS.init();
   }
+
+
+  routeSuccess(){
+    this.router.navigateByUrl('/mailSend');
+  }
+
 
 }

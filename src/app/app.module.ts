@@ -21,6 +21,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MailSendComponent } from './mail-send/mail-send.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MatListModule } from '@angular/material/list';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    ImprintComponent
+    ImprintComponent,
+    MailSendComponent
   ],
   imports: [
     BrowserModule,
