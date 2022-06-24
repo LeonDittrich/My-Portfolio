@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MailSendComponent } from './mail-send.component';
+import { SuccessComponent } from './success.component';
 
-describe('MailSendComponent', () => {
-  let component: MailSendComponent;
-  let fixture: ComponentFixture<MailSendComponent>;
+describe('SuccessComponent', () => {
+  let component: SuccessComponent;
+  let fixture: ComponentFixture<SuccessComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MailSendComponent ]
+      declarations: [ SuccessComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MailSendComponent);
+    fixture = TestBed.createComponent(SuccessComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

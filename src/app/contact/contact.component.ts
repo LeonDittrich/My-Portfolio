@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
 
 
   routeSuccess(){
-    this.router.navigateByUrl('/mailSend');
+    this.router.navigateByUrl('/success');
   }
 
 
