@@ -11,7 +11,7 @@
        
     </div>
 
-    <form data-aos="flip-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" action="https://www.leondittrich.com/send_mail.php" method="POST">
+    <form #form data-aos="flip-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" action="https://leondittrich.com/leondittrich.com/send_mail.php" method="POST">
         <div>
             <p class="headlineInput">
                 Name
@@ -38,7 +38,7 @@
     </form>
 
     <div data-aos="fade-up-left" data-aos-anchor-placement="center-bottom" data-aos-delay="800" data-aos-duration="1000" class="button">
-        <button class="custom-btn btn" type="submit">
+        <button [routerLink]="'/success'" (click)="form.submit();" class="custom-btn btn" type="submit">
             Send
         </button>
     </div>
