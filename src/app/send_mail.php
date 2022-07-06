@@ -3,7 +3,7 @@
 ########### CONFIG ###############
 
 $recipient = 'leon_dittrich@web.de';
-$redirect = '/#/success';
+$redirect = '/success';
 
 ########### CONFIG END ###########
 
