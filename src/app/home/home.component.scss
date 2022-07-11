@@ -158,13 +158,19 @@ body[data-aos-delay='custom'] [data-aos],
    
 }
 
+.arrowContainerClick {
+    position: absolute;
+    width: 69px;
+    height: 101px;
+    left: 49%;
+    top: 84%;
+    cursor: pointer;
+    z-index: 2;
+}
+
 .arrowContainer {
    display: flex;
    height: 90px;
-   width: 78px;
-   margin-left: 48%;
-   margin-top: 37vh;
-   cursor: pointer;
 }
 
 $ani-speed: 2s;
