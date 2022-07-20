@@ -16,7 +16,6 @@ body[data-aos-delay='custom'] [data-aos],
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    //margin-top: 51px;
 
 
     .spanColor1 {
@@ -24,7 +23,7 @@ body[data-aos-delay='custom'] [data-aos],
     }
 
     .spanColor2 {
-        color: #00dcff;
+        color: #2dfcd8;
     }
 
     .greetingText p{
@@ -121,6 +120,7 @@ body[data-aos-delay='custom'] [data-aos],
             text-decoration: none;
             display: table-cell;
             vertical-align: middle;
+            border-radius: 10px;
             
     
             &::after {
