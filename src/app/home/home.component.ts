@@ -27,10 +27,10 @@ export class HomeComponent implements OnInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.flipText = true;
-    }, 4000);
+    }, 3000);
 
     setTimeout(() => {
       this.arrowDown = true;
-    }, 7500);
+    }, 3500);
   }
 }

@@ -62,12 +62,12 @@ body[data-aos-delay='custom'] [data-aos],
     
     .greetingText p:nth-of-type(1)::before,
     .greetingText p:nth-of-type(1)::after{
-        animation-delay: 1s;
+        animation-delay: 0.5s;
     }
     
     .greetingText p:nth-of-type(2)::before,
     .greetingText p:nth-of-type(2)::after{
-        animation-delay: 1.5s;
+        animation-delay: 1s;
     }
     
     @keyframes a-ltr-after{
