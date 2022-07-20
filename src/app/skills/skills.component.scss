@@ -32,8 +32,6 @@
             border-radius: 10px;
             width: 182px;
             height: 119px;
-            //height: 90px;
-            //width: 150px;
             margin: 15px 15px 70px 15px;
         }
 
@@ -54,7 +52,7 @@
                 justify-content: center;
                 align-items: center;
                 z-index: 2;
-                box-shadow: 0 5px 10px 5px #00000026 !important;
+                box-shadow: 0 5px 10px 2px #00000026 !important;
 
 
                 img {
@@ -80,7 +78,7 @@
             p {
                 font-weight: 400;
                 font-size: 18px;
-                line-height: 28px;
+                line-height: 28px;margin: 0;
             }
         }
     }   
@@ -152,8 +150,9 @@
         
         
                 p {
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 18px;
+                    font-weight: 500;
                 }
             }
         }
