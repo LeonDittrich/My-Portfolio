@@ -22,6 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { SuccessComponent } from './success/success.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { SuccessComponent } from './success/success.component';
     ContactComponent,
     FooterComponent,
     ImprintComponent,
-    SuccessComponent
+    SuccessComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,

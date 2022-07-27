@@ -1,0 +1,60 @@
+.privacy {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #2DFCD8;
+    }
+}
+
+
+
+/* -----------------Optimierung für Mobile Endgeräte----------------- */
+
+
+@media (max-width: 700px) {
+    .privacy {
+      max-width: 320px;
+
+
+      h1 {
+        margin-top: 30px;
+      }
+    }
+}
+
+@media (max-width: 1079px) and (min-width: 701px) {
+  
+
+    .privacy {
+      max-width: 620px;
+
+
+      h1 {
+        margin-top: 30px;
+      }
+    }
+}  
+
+@media (min-width: 1080px) {
+
+    .privacy {
+      max-width: 900px;
+
+
+      h1 {
+        margin-top: 30px;
+      }
+    }
+}
